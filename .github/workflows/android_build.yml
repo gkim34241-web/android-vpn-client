@@ -21,10 +21,9 @@ jobs:
         distribution: 'temurin'
     
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v3
-    
-    - name: Run Gradle build
-      run: ./gradlew assembleDebug --no-daemon --stacktrace
+      uses: gradle/gradle-build-action@v3.5.0
+      with:
+        arguments: assembleDebug --no-daemon --stacktrace
     
     - name: Upload APK artifact
       uses: actions/upload-artifact@v3
