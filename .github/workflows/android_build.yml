@@ -20,14 +20,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     
-    - name: Install Gradle
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y gradle
-        gradle --version
-    
     - name: Build with Gradle
-      run: gradle assembleDebug --no-daemon --stacktrace
+      uses: gradle/gradle-build-action@v3
+      with:
+        arguments: assembleDebug --no-daemon --stacktrace
     
     - name: Upload APK artifact
       uses: actions/upload-artifact@v3
