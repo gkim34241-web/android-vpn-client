@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VPN Client</string>
+    <string name="start_vpn">Start VPN</string>
+    <string name="stop_vpn">Stop VPN</string>
+    <string name="vpn_status">VPN Status: %s</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="basic_vpn">Basic VPN</string>
+    <string name="wireguard_vpn">WireGuard VPN</string>
+    <string name="select_vpn_type">Select VPN Type</string>
+    <string name="ping">Ping: %d ms</string>
+    <string name="speed">Speed: %s/s</string>
+</resources>
